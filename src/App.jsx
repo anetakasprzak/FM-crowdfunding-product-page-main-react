@@ -24,13 +24,39 @@ export default function App() {
           </p>
           <div className="btns__box">
             <button className="btn btn__main">Back this project</button>
-            <button className="btn__bookmark">
-              <img
-                src="../public/images/icon-bookmark.svg"
-                alt="bookmark icon"
-                className="bookmark--icon"
-              />
-            </button>
+            <div className="bookmark">
+              <button className="btn__bookmark">
+                <img
+                  src="../public/images/icon-bookmark.svg"
+                  alt="bookmark icon"
+                  className="bookmark--icon"
+                />
+              </button>
+              <span>Bookmark</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="stats__section section__wrapper">
+          <div className="stats">
+            <div className="stats__box">
+              <p className="number__big">$89,914</p>
+              <p className="text">of $100,000 backed</p>
+            </div>
+            <span className="border"></span>
+            <div className="stats__box">
+              <p className="number__big">5,007</p>
+              <p className="text">total backers</p>
+            </div>
+            <span className="border"></span>
+            <div className="stats__box">
+              <p className="number__big">56</p>
+              <p className="text">days left</p>
+            </div>
+          </div>
+
+          <div className="stats__line">
+            <span className="green"></span>
           </div>
         </div>
       </section>
