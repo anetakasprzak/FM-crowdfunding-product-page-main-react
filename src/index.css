@@ -180,6 +180,54 @@ video {
   border-radius: 33.5px;
 }
 
+/***************** ABOUT SECTION *****************/
+
+.about__heading {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.about__text {
+  line-height: 24px;
+  margin-bottom: 3.5rem;
+}
+
+.reward {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 2.4rem;
+}
+
+.reward__heading {
+  color: #000;
+  font-weight: 700;
+}
+
+.pledge__heading {
+  color: #3cb3ab;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.left__box {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.reward__number {
+  color: #000;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.btn__reward {
+  padding: 1.5rem 3.2rem;
+}
+
 /**********************************/
 /***************** DESKTOP SIZE *****************/
 /**********************************/
@@ -291,5 +339,55 @@ video {
     top: 0;
     left: 0;
     border-radius: 33.5px;
+  }
+
+  /***************** ABOUT SECTION *****************/
+
+  .about__heading {
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .about__text {
+    line-height: 30px;
+  }
+
+  .reward__heading--box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+  }
+
+  .reward__text {
+    line-height: 30px;
+  }
+
+  .btn__left--box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.4rem;
+  }
+
+  .reward {
+    padding: 3.8rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .reward__heading {
+    font-size: 1.8rem;
+  }
+
+  .pledge__heading {
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
+  }
+
+  .left__box {
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .btn__reward {
+    padding: 1.5rem 3.2rem;
   }
 }
