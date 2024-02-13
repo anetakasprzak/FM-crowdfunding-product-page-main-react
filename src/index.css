@@ -136,8 +136,9 @@ video {
 .stats {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   gap: 2.5rem;
+  margin-bottom: 3.2rem;
 }
 
 .stats__box {
@@ -244,9 +245,17 @@ video {
 
   .stats__section {
     text-align: center;
-    gap: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2em;
+  }
+
+  .stats {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0rem;
   }
 
   .stats__box {
@@ -262,12 +271,11 @@ video {
 
   .border {
     height: 1px;
-    width: 20rem;
     transform: rotate(90deg);
   }
 
   .stats__line {
-    width: 100%;
+    flex: 1 0 auto;
     height: 1.2rem;
     border-radius: 33.5px;
     background-color: rgba(47, 47, 47, 0.05);
