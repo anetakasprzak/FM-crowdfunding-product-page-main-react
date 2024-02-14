@@ -229,6 +229,16 @@ video {
   padding: 1.5rem 3.2rem;
 }
 
+/************** REWARD - out of stock **************/
+
+.outofstock {
+  opacity: 0.4;
+}
+
+.btn__outofstock {
+  background-color: #2f2f2f;
+}
+
 /**********************************/
 /***************** DESKTOP SIZE *****************/
 /**********************************/

@@ -101,7 +101,10 @@ export default function App() {
           </div>
 
           {data.map((reward) => (
-            <div className="reward" key={reward.id}>
+            <div
+              className={reward.left === 0 ? "reward outofstock" : "reward"}
+              key={reward.id}
+            >
               <div className="reward__heading--box">
                 <h4 className="reward__heading">{reward.title}</h4>
                 <p className="pledge__heading">
@@ -114,7 +117,15 @@ export default function App() {
                   <p className="reward__number">{reward.left}</p>
                   <p className="text">left</p>
                 </div>
-                <button className="btn btn__reward">Select Reward</button>
+                <button
+                  className={
+                    reward.left === 0
+                      ? "btn btn__reward btn__outofstock"
+                      : "btn btn__reward"
+                  }
+                >
+                  {reward.left === 0 ? "Out of stock" : "Select Reward"}
+                </button>
               </div>
             </div>
           ))}
