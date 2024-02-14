@@ -120,7 +120,7 @@ export default function App() {
                 <button
                   className={
                     reward.left === 0
-                      ? "btn btn__reward btn__outofstock"
+                      ? "btn__reward btn__outofstock"
                       : "btn btn__reward"
                   }
                 >

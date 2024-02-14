@@ -232,11 +232,17 @@ video {
 /************** REWARD - out of stock **************/
 
 .outofstock {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .btn__outofstock {
-  background-color: #2f2f2f;
+  background-color: #2f2f2fae;
+  border-radius: 33.5px;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
 }
 
 /**********************************/
@@ -396,5 +402,23 @@ video {
   .left__box {
     margin-bottom: 2.5rem;
     margin-top: 2.5rem;
+  }
+
+  /***************** HOVER STATES *****************/
+
+  .btn,
+  .bookmark,
+  .btn__bookmark {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn:hover {
+    background: #147a73;
+  }
+
+  .bookmark:hover,
+  .btn__bookmark:hover {
+    opacity: 0.5;
   }
 }
