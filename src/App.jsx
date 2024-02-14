@@ -1,3 +1,27 @@
+const data = [
+  {
+    id: 1,
+    title: "Bamboo Stand",
+    pledge: "$25",
+    text: `You get an ergonomic stand made of natural bamboo. You&apos;ve helped us launch our promotional campaign, and you&apos;ll be added to a special Backer member list.`,
+    left: 101,
+  },
+  {
+    id: 2,
+    title: "Black Edition Stand",
+    pledge: "$75",
+    text: `You get a Black Special Edition computer stand and a personal thank you. You&apos;ll be added to our Backer member list. Shipping is included.`,
+    left: 64,
+  },
+  {
+    id: 3,
+    title: "Mahogany Special Edition",
+    pledge: "$200",
+    text: "You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
+    left: 0,
+  },
+];
+
 export default function App() {
   return (
     <div className="wrapper">
@@ -76,24 +100,24 @@ export default function App() {
             </p>
           </div>
 
-          <div className="reward">
-            <div className="reward__heading--box">
-              <h4 className="reward__heading">Bamboo Stand</h4>
-              <p className="pledge__heading">Pledge $25 or more</p>
-            </div>
-            <p className="text reward__text">
-              You get an ergonomic stand made of natural bamboo. You&apos;ve
-              helped us launch our promotional campaign, and you&apos;ll be
-              added to a special Backer member list.
-            </p>
-            <div className="btn__left--box">
-              <div className="left__box">
-                <p className="reward__number">101</p>
-                <p className="text">left</p>
+          {data.map((reward) => (
+            <div className="reward" key={reward.id}>
+              <div className="reward__heading--box">
+                <h4 className="reward__heading">{reward.title}</h4>
+                <p className="pledge__heading">
+                  Pledge {reward.pledge} or more
+                </p>
               </div>
-              <button className="btn btn__reward">Select Reward</button>
+              <p className="text reward__text">{reward.text}</p>
+              <div className="btn__left--box">
+                <div className="left__box">
+                  <p className="reward__number">{reward.left}</p>
+                  <p className="text">left</p>
+                </div>
+                <button className="btn btn__reward">Select Reward</button>
+              </div>
             </div>
-          </div>
+          ))}
         </section>
       </section>
     </div>

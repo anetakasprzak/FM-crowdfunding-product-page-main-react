@@ -198,6 +198,7 @@ video {
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   padding: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .reward__heading {
@@ -385,9 +386,5 @@ video {
   .left__box {
     margin-bottom: 2.5rem;
     margin-top: 2.5rem;
-  }
-
-  .btn__reward {
-    padding: 1.5rem 3.2rem;
   }
 }
