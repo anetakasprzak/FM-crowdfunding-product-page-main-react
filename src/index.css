@@ -116,6 +116,8 @@ video {
   padding: 1.8rem 4.2rem;
 }
 
+/***************** BOOKMARKED *****************/
+
 .checkbox-wrapper {
   transition: all 0.2s;
 }
@@ -127,7 +129,7 @@ video {
 .checkbox-wrapper label {
   cursor: pointer;
   display: inline-block;
-  width: 19rem;
+  width: inherit;
   height: 5.6rem;
   background-color: rgba(47, 47, 47, 0.05);
   border-radius: 33.5px;
@@ -158,6 +160,10 @@ video {
   align-items: center;
 }
 
+.label-container p {
+  display: none;
+}
+
 .container svg {
   fill: #2f2f2f;
 }
@@ -178,14 +184,6 @@ video {
 
 .checkbox-wrapper:has(input:checked) label svg path {
   fill: #fff;
-}
-
-/***************** BOOKMARKED *****************/
-
-.bookmarked {
-  color: #147a73;
-  background-color: #147a73;
-  opacity: 0.5;
 }
 
 /************ SECTION - STATS ************/
@@ -481,5 +479,15 @@ video {
   .bookmark:hover,
   .btn__bookmark:hover {
     opacity: 0.5;
+  }
+
+  /***************** BOOKMARKED *****************/
+
+  .checkbox-wrapper label {
+    width: 19rem;
+  }
+
+  .label-container p {
+    display: block;
   }
 }
