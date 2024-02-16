@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const data = [
   {
     id: 1,
@@ -23,6 +25,8 @@ const data = [
 ];
 
 export default function App() {
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
   return (
     <div className="wrapper">
       <header className="header">
@@ -48,7 +52,7 @@ export default function App() {
           </p>
           <div className="btns__box">
             <button className="btn btn__main">Back this project</button>
-            <div className="bookmark">
+            <div className="bookmark" onClick={() => setIsBookmarked(true)}>
               <button className="btn__bookmark">
                 <img
                   src="../public/images/icon-bookmark.svg"
@@ -56,7 +60,7 @@ export default function App() {
                   className="bookmark--icon"
                 />
               </button>
-              <span>Bookmark</span>
+              <span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
             </div>
           </div>
         </div>

@@ -127,6 +127,14 @@ video {
   background-color: transparent;
 }
 
+/***************** BOOKMARKED *****************/
+
+.bookmarked {
+  color: #147a73;
+  background-color: #147a73;
+  opacity: 0.5;
+}
+
 /************ SECTION - STATS ************/
 
 .stats__section {
