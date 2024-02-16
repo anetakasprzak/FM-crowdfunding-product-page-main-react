@@ -25,7 +25,7 @@ const data = [
 ];
 
 export default function App() {
-  const [isBookmarked, setIsBookmarked] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <div className="wrapper">
@@ -52,15 +52,27 @@ export default function App() {
           </p>
           <div className="btns__box">
             <button className="btn btn__main">Back this project</button>
-            <div className="bookmark" onClick={() => setIsBookmarked(true)}>
-              <button className="btn__bookmark">
-                <img
-                  src="../public/images/icon-bookmark.svg"
-                  alt="bookmark icon"
-                  className="bookmark--icon"
+            <div className="checkbox-wrapper">
+              <label>
+                <input
+                  type="checkbox"
+                  checked={isChecked}
+                  onChange={() => setIsChecked((prev) => !prev)}
                 />
-              </button>
-              <span>{isBookmarked ? "Bookmarked" : "Bookmark"}</span>
+                <div className="label-container">
+                  <svg
+                    width="56"
+                    height="56"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g fill="none" fillRule="evenodd">
+                      <circle cx="28" cy="28" r="28" />
+                      <path d="M23 19v18l5-5.058L33 37V19z" />
+                    </g>
+                  </svg>
+                  <p>{isChecked ? "Bookmarked" : "Bookmark"}</p>
+                </div>
+              </label>
             </div>
           </div>
         </div>

@@ -116,15 +116,68 @@ video {
   padding: 1.8rem 4.2rem;
 }
 
-.bookmark span {
+.checkbox-wrapper {
+  transition: all 0.2s;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
   display: none;
 }
 
-.btn__bookmark {
+.checkbox-wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  width: 19rem;
+  height: 5.6rem;
+  background-color: rgba(47, 47, 47, 0.05);
+  border-radius: 33.5px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.checkbox-wrapper label:hover {
+  color: #7a7a7a;
+}
+
+.checkbox-wrapper label svg circle {
+  fill: #2f2f2f;
+}
+
+.checkbox-wrapper label svg path {
+  fill: #b1b1b1;
+}
+
+.checkbox-wrapper label:hover svg circle {
+  fill: #707070;
+}
+
+.label-container {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.container svg {
+  fill: #2f2f2f;
+}
+
+.checkbox-wrapper label img {
   height: 5.6rem;
   width: 5.6rem;
-  border: none;
-  background-color: transparent;
+}
+
+.checkbox-wrapper:has(input:checked) label {
+  color: #147a73;
+  background-color: rgba(20, 122, 115, 0.05);
+}
+
+.checkbox-wrapper:has(input:checked) label svg circle {
+  fill: #147a73;
+}
+
+.checkbox-wrapper:has(input:checked) label svg path {
+  fill: #fff;
 }
 
 /***************** BOOKMARKED *****************/
